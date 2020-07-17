@@ -1,0 +1,22 @@
+{
+	"name": "@cristianfalcone/server",
+	"version": "0.0.0",
+	"description": "Fast and dependency-free Node.js native server wrapper",
+	"homepage": "https://github.com/cristianfalcone/node-utils#readme",
+	"bugs": {
+		"url": "https://github.com/cristianfalcone/node-utils/issues"
+	},
+	"license": "ISC",
+	"author": "Cristian Falcone <cristianfalcone@gmail.com> (https://cristianfalcone.com)",
+	"files": [
+		"dist"
+	],
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cristianfalcone/node-utils",
+		"directory": "packages/server"
+	}
+}

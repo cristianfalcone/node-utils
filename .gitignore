@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+coverage/
+dist/
+node_modules/
+
+coverage.*
+*-lock.*
+*.lock
+*.log

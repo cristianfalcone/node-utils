@@ -1,0 +1,32 @@
+{
+	"name": "node-utils-monorepo",
+	"private": true,
+	"license": "ISC",
+	"author": "Cristian Falcone <cristianfalcone@gmail.com> (https://cristianfalcone.com)",
+	"scripts": {
+		"bench:server": "ts-node bench/server.ts",
+		"bench": "autocannon http://localhost:3000/foo/bar",
+		"build": "yarn clean && yarn compile",
+		"clean": "rimraf -rf packages/*/dist",
+		"compile": "rollup -c",
+		"prepublish": "yarn build",
+		"test": "uvu -r ts-node/register tests",
+		"test:coverage": "c8 yarn test",
+		"test:report": "c8 report --reporter=text-lcov > coverage.lcov",
+		"test:watch": "chokidar packages/*/src tests -c \"yarn test\""
+	},
+	"devDependencies": {
+		"@lerna/batch-packages": "^3.16.0",
+		"@lerna/filter-packages": "^3.18.0",
+		"@lerna/project": "^3.21.0",
+		"@types/node": "^14.0.23",
+		"@types/supertest": "^2.0.10",
+		"@wessberg/rollup-plugin-ts": "^1.2.28",
+		"mri": "^1.1.6",
+		"supertest": "^4.0.2",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.7",
+		"uvu": "^0.2.3"
+	},
+	"repository": "github:cristianfalcone/node-utils"
+}
