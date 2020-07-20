@@ -1,6 +1,6 @@
 {
 	"name": "@cristianfalcone/server",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Fast and dependency-free Node.js native server wrapper",
 	"homepage": "https://github.com/cristianfalcone/node-utils#readme",
 	"bugs": {
